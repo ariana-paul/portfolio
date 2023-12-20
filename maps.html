@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ariana Paul's Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  </head>
+  <body>
+    
+    <div class="headers">
+        <div class="header name">Ariana Paul</div>
+        <div class="header maps"><a href="maps.html">Maps</a></div>
+        <div class="header aboutme"><a href="about-me.html">About Me</a></div>
+    </div>
+
+
+  
+
+    <div class="articlemaps">
+      <h4>Sea Level Rise Projections in Small Island Developing States (SIDS)</h4>
+
+
+      <div class="vividworknav">
+        <img class="myImg visuals" src="Cuba_slr.jpg">
+        <div class="title">
+          <p>Projected Sea Level Rise in Cuba</p>
+        </div>
+        <div class="program">
+          <p class="program1">ArcGIS</p>
+          <p>Illustrator</p>
+        </div>
+      </div>
+  
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+
+      <div class="vividworknav">
+        <img class="myImg visuals" src="GuyanaSuriname_slr.jpg">
+        <div class="title">
+          <p>Projected Sea Level Rise in Guyana & Suriname</p>
+        </div>
+        <div class="program">
+          <p class="program1">ArcGIS</p>
+          <p>Illustrator</p>
+        </div>
+      </div>
+  
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+    
+    </div>
+
+  
+
+    <div class="clearfix"></div>
+
+    <div class="articlemaps">
+      <h4>Maps for <a href="https://www.c-ville.com/dousing-the-fire" target="_blank" class="titlehover">'Dousing the Fire: Madison County volunteers help fight the Quaker Run blaze'</a>, published in C-VILLE Weekly</h4>
+
+      <div class="vividworknav">
+      <img class="myImg visuals" src="Fire_AT&T.jpg">
+      <div class="title">
+        <p>Quaker Run Fire: AT&T LTE Data & Voice Coverage</p>
+      </div>
+      <div class="program">
+        <p class="program1">ArcGIS</p>
+        <p>Illustrator</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+
+    
+      
+    <div class="vividworknav">
+      <img class="myImg visuals"  src="Fire_T-Mobile.jpg">
+      <div class="title">
+        <p>Quaker Run Fire: T-Mobile LTE Data & Voice Coverage</p>
+      </div>
+      <div class="program">
+        <p class="program1">ArcGIS</p>
+        <p>Illustrator</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+  
+
+    <div class="vividworknav">
+      <img class="myImg visuals" src="Fire_Verizon.jpg">
+      <div class="title">
+        <p>Quaker Run Fire: Verizon LTE Data & Voice Coverage</p>
+      </div>
+      <div class="program">
+        <p class="program1">ArcGIS</p>
+        <p>Illustrator</p>
+      </div>
+    </div>
+  </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+  
+
+    <script>
+      // Get the image modal
+var imgModal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var closeBtns = document.getElementsByClassName("close");
+
+// Image modal image
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Get all images that should open the modal
+var images = document.getElementsByClassName("myImg");
+
+for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+        imgModal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+}
+
+// Add close functionality for all close buttons
+for (var i = 0; i < closeBtns.length; i++) {
+    closeBtns[i].onclick = function() {
+        imgModal.style.display = "none";
+    }
+}
+imgModal.addEventListener('click', function(event) {
+      if (event.target == imgModal) {
+          imgModal.style.display = "none";
+          modalImg.src = ''; // Clear the image source
+      }
+  });
+
+  // Prevent event from closing the modal when clicking on the modal content
+  modalImg.addEventListener('click', function(event) {
+      event.stopPropagation();
+  });
+
+      </script>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="articlemaps">
+    <h4>Environmental Impacts of US Power Plants</h4>
+
+    <div class="vividworknav">
+      <a href="https://public.tableau.com/app/profile/ariana5170/viz/PowerplantEnvironmentalImapcts_HousingValues/Dashboard1" target="_blank">
+      <img class="myImg visuals"  src="HousingValues.png">
+    </a>
+      <div class="title">
+        <p>Analyzing Housing Values Pre- and Post-Introduction of Power Plants</p>
+      </div>
+      <div class="program">
+        <p class="program1">Excel</p>
+        <p>Tableau</p>
+      </div>
+    </div>
+
+    <div class="vividworknav">
+      <a href="https://public.tableau.com/app/profile/ariana5170/viz/PowerplantEnvironmentalImpacts_LungCancer/Dashboard1" target="_blank">
+      <img class="myImg visuals"  src="LungCancerDeaths.png">
+    </a>
+      <div class="title">
+        <p>Assessing Lung Cancer Mortality Pre- and Post-Retirement of Power Plants</p>
+      </div>
+      <div class="program">
+        <p class="program1">R</p>
+        <p>Tableau</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+
+    <div class="articlemaps">
+      <h4>GIS Methods</h4>
+
+      <div class="vividworknav">
+      <img class="myImg visuals"  src="Lab2.jpg">
+      <div class="title">
+        <p>Mapping the Subway: NYC Subway Stations by Distance</p>
+      </div>
+      <div class="program">
+        <p>ArcGIS</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>   
+
+    <div class="vividworknav">
+      <img class="myImg visuals"  src="Lab6.jpg">
+      <div class="title">
+        <p>311 Data: NYC Noise Complaints</p>
+      </div>
+      <div class="program">
+        <p>ArcGIS</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>      
+
+    </div>
+
+    <script>
+      // Get the image modal
+var imgModal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var closeBtns = document.getElementsByClassName("close");
+
+// Image modal image
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Get all images that should open the modal
+var images = document.getElementsByClassName("myImg");
+
+for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+        imgModal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+}
+
+// Add close functionality for all close buttons
+for (var i = 0; i < closeBtns.length; i++) {
+    closeBtns[i].onclick = function() {
+        imgModal.style.display = "none";
+    }
+}
+imgModal.addEventListener('click', function(event) {
+      if (event.target == imgModal) {
+          imgModal.style.display = "none";
+          modalImg.src = ''; // Clear the image source
+      }
+  });
+
+  // Prevent event from closing the modal when clicking on the modal content
+  modalImg.addEventListener('click', function(event) {
+      event.stopPropagation();
+  });
+
+      </script>
+
+
+
+  <div class="clearfix"></div>
+
+
+    <div class="articlemaps">
+      <h4>Environmental Science Department</h4>
+
+      <div class="vividworknav">
+        <div class="pdf-thumbnail" data-pdf-src="Thesis.pdf">
+            <img class="myImg visuals" src="Thesis.jpg">
+            <div class="title">
+                <p>Climate and Oceanographic Conditions in the Mid-Atlantic through the Peak Interglacial Period</p>
+            </div>
+            <div class="program">
+                <p>Python</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vividworknav">
+      <div class="pdf-thumbnail" data-pdf-src="BigDataPython.pdf">
+          <img class="myImg visuals"  src="BigDataPython.png">
+          <div class="title">
+              <p>Rising Temperatures' Effect on the Frequency of Natural Disasters</p>
+          </div>
+          <div class="program">
+              <p>Python</p>
+          </div>
+      </div>
+  </div>
+  </div>
+
+    <div id="pdfModal" class="modalpdf">
+      <span class="pdfclose">&times;</span>
+      <iframe class="pdfmodal-content" id="pdfContent" ></iframe>
+      <div id="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal element
+var modal = document.getElementById("pdfModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("pdfclose")[0];
+
+// Get all elements with the class 'pdf-thumbnail'
+var pdfThumbnails = document.querySelectorAll('.pdf-thumbnail');
+
+// Iterate over each thumbnail to add click event
+pdfThumbnails.forEach(function(thumbnail) {
+    thumbnail.onclick = function() {
+        var pdfSrc = this.getAttribute("data-pdf-src"); // Get the PDF source from data attribute
+        var pdfContent = document.getElementById("pdfContent");
+        pdfContent.src = pdfSrc; // Set the source for the iframe
+        modal.style.display = "block"; // Display the modal
+
+        
+    }
+});
+
+// Get the modal element
+var modal = document.getElementById("pdfModal");
+
+// Get the <span> (close button) element that closes the modal
+var span = document.querySelector('.modalpdf .pdfclose'); // Ensure this selector matches your close button
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    // Clear the PDF source if you are using an <iframe> or <embed> for PDFs
+    var pdfContent = document.getElementById("pdfContent");
+    if(pdfContent) {
+        pdfContent.src = '';
+    }
+}
+
+
+// Close the modal if the user clicks anywhere outside of it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.getElementById("pdfContent").src = ''; // Clear the iframe source
+    }
+}
+  </script>
+
+  
+<div class="clearfix"></div>
+<div class="articlemaps">
+  <h4> </h4>
+  </div>
+
+    
+   
+
+    
+  </body>
+  </html>
+
+

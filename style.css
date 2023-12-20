@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 25px;
+    text
+}
+
+.headers {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
+.header{
+    padding: 10px 30px; 
+    text-align: center;
+    color: #36464F;
+    font-family: 'Inter';
+}
+
+
+.header:first-child {
+    margin-right: auto; 
+}
+
+.header:nth-child(2),
+.header:nth-child(3) {
+    margin-right: 50px; 
+}
+
+.header:nth-child(3) {
+    margin-left: -50px; 
+}
+
+.name{
+    font-size: 45px;
+}
+
+.maps{
+    font-size: 30px;
+}
+.maps:hover{
+    color: #0077B5; 
+}
+
+.aboutme{
+    font-size: 30px;
+    padding: 10px 30px;
+}
+
+.aboutme:hover{
+    color: #0077B5; 
+}
+
+.header a {
+    color: inherit; 
+}
+
+.picture-para{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 5%;
+}
+.image{
+    width: 12%;
+    height: auto;
+    margin: 20px;
+}
+
+.p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #36464F;
+    font-family: 'Inter';
+}
+
+
+.space{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.flex{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15%;
+}
+
+.p1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #36464F;
+    font-family: 'Inter';
+}
+
+.p1 a {
+    color: inherit; 
+}
+
+.pic1{
+    width: 5%;
+    height: auto;
+}
+.pic2{
+    width: 3.8%;
+    height: auto;
+}
+
+/* For Maps */
+.articlemaps{
+    padding: 20px 30px; 
+    text-align: left;
+    color: #36464F;
+    font-family: 'Inter';
+    text-size
+}
+
+.articlemaps a {
+    color: inherit; 
+}
+
+.titlehover:hover{
+    color: #0077B5; 
+}
+
+.visuals{
+    width: 20%;
+    height: auto;
+}
+
+
+/* Hover For Each Map */
+.vividworknav {
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    background-color: black;
+  }
+
+  .vividworknav:hover img {
+    opacity: 0.3;
+  }
+
+
+
+  .vividworknav:hover .title {
+    opacity: 1; 
+  }
+
+  .vividworknav:hover .program {
+    opacity: 1; 
+  }
+
+  .vividworknav img {
+    padding: 0;
+    width: 100%;
+    display: block;
+    opacity: 1;
+  }
+
+ 
+
+  .vividworknav img,
+  .title, .program {
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .title {
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: auto;
+    font-size: 15px;
+    text-align: left;
+    opacity: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inter';
+  }
+
+  .program {
+    position: absolute;
+    color: white;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+    text-align: right;
+    opacity: 0;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    align-items: flex-end;
+  }
+
+.program1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.program p {
+    background-color: #808080; 
+    border-radius: 50%; 
+    width: fit-content; 
+    padding: 8px; 
+    text-align: center; 
+}
+
+  
+/* Symbol for Email and LinkedIn */
+.fa-envelope, .fa-linkedin {
+    font-size: 24px; 
+    color: #36464F; 
+    margin-right: 10px; 
+}
+
+.fa-envelope:hover, .fa-linkedin:hover {
+    color: #0077B5; 
+}
+
+
+/* Style the Modal FOR MAP 1*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Style the Image Inside the Modal */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Add Animation */
+  @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+  }
+  
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Making box behind skills in About Me */
+  .skills {
+    background-color: #808080    ; 
+    border-radius: 50%; 
+    width: fit-content; 
+    padding: 4px;
+    text-align: center; 
+}
+.pskills{
+    color: white;
+    font-family: 'Inter';
+    font-size: 13px;
+    margin-left: 95px;
+}
+
+h4{
+    font-family: Inter;
+    color: #36464F;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
+
+
+
+
+.modalpdf {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+.pdfmodal-content {
+    background-color: #fefefe;
+    margin: auto; /* Auto margins for centering */
+    width: 90%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    border: 1px solid #888;
+    display: block;
+}
+
+
+
+.pdfclose {
+    color: #f1f1f1;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pdfclose:hover,
+.pdfclose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.pdfmodal-content{ 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+.visuals{
+    cursor: pointer;
+  }
